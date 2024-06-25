@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="left-panel">
+      <header>
+        <h1 class="logo">a</h1>
+      </header>
+      <article>
+        <textarea id="input-text" placeholder="Digite seu texto"></textarea>
+        <p class="info-text">
+          <i class="fas fa-exclamation-circle"></i> Apenas letras minúsculas e sem acento.
+        </p>
+      </article>
+      <footer>
+        <div class="button-group">
+          <button id="encrypt-btn" class="btn">Criptografar</button>
+          <button id="decrypt-btn" class="btn">Descriptografar</button>
+        </div>
+      </footer>
+    </section>
+
+    <aside class="right-panel">
+      <div class="output-container">
+        <figure class="image-container">
+          <img src="./assets/img1.png" alt="Imagem de decodificação">
+        </figure>
+        <div>
+          <p id="output-message">Nenhuma mensagem encontrada</p>
+          <p id="output-description">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+        <footer>
+          <button id="copy-btn" class="btn hidden">Copiar</button>
+        </footer>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="name">
+    <p>
+      Christopher Lucas - Oracle Next Education 2024
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
